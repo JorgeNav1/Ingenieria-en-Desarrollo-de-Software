@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+
+
+int main() {
+    
+    int num;
+    int A;
+    int B;
+    int resto;
+    int ope1;
+    int ope2;
+    int ope3;
+    
+    printf ("Ingrese un numero de 4 digitos ");
+    scanf ("%d", &num);
+    
+    if (num > 999 & num <=9999)
+    {
+        ope1 = (int) (num/1000); //1
+        A= num % 1000;
+        ope2 = (int) (A/100);
+        B= A % 100;
+        
+        ope3 = (int) (B/10);
+        resto= B % 10;
+       
+    
+          printf ("El numero inverso al ingresado es, %d%d%d%d", resto, ope3, ope2, ope1);
+        
+    }
+    
+    else {
+    
+    
+    printf ("Numero ingresado no valido, debe ser de 4 digitos ");
+    }
+
+    return 0;
+}
