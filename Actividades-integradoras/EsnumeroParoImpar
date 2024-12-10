@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+
+int main()
+{
+    int totalnumerosingresados = 10;
+    int numeroentero;
+    
+    while (totalnumerosingresados>0)
+    {
+        printf ("\n,Ingresa un numero" );
+        scanf  ("%d", &numeroentero);
+       
+    
+        if (numeroentero % 2==0)
+        {  
+        printf("\n, Es numero par");
+        }
+        
+        else
+        {
+        
+printf ("\n, Es numero impar");
+}
+        
+       totalnumerosingresados--;
+        
+    }
+     
+   
+    printf ("\n, Se han validado si son par o impar 10 numeros");
+    return 0;
+}
