@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARA - Shopping Cart</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">    
+    
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<header class="sticky-top bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-1 text-white" href="index.html" style="letter-spacing: 0px;">
+                <i class="bi bi-shop me-3"></i>SARA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNavegacion">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="carrito.html"></i>Cart
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search products" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="flex-grow-1 container py-5">
+    
+    <div class="mb-4">
+        <h2 class="product-title fw-bold text-uppercase">Shopping Cart</h2>
+        <p class="text-muted small">You have 2 items in your cart.</p>
+    </div>
+
+    <div class="row g-4">
+        
+        <div class="col-lg-8">
+            <div class="card border-0 shadow-sm p-4 mb-4">
+                <div class="table-responsive">
+                    <table class="table align-middle mb-0">
+                        <thead class="table-light text-uppercase fs-7">
+                            <tr>
+                                <th scope="col">Product</th>
+                                <th scope="col">Price</th>
+                                <th scope="col" style="width: 120px;">Quantity</th>
+                                <th scope="col">Subtotal</th>
+                                <th scope="col" class="text-end">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="Img/productodestacado1.jpg" alt="Product" class="rounded" style="width: 60px; height: 60px; object-fit: cover;">
+                                        <div>
+                                            <h6 class="product-title fw-bold fs-6 mb-0">Polo Bandas Graficos Ayrton Senna</h6>
+                                            <small class="text-muted">Size: M | Color: Multicolor</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="fw-semibold">$999.00</td>
+                                <td>
+                                    <input type="number" class="form-control form-control-sm text-center" value="1" min="1" max="10">
+                                </td>
+                                <td class="fw-bold text-dark">$999.00</td>
+                                <td class="text-end">
+                                    <button class="btn btn-outline-danger btn-sm border-0" title="Remove item">
+                                        <i class="bi bi-trash fs-5"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="Img/productodestacado2.jpg" alt="Product" class="rounded" style="width: 60px; height: 60px; object-fit: cover;">
+                                        <div>
+                                            <h6 class="product-title fw-bold fs-6 mb-0">Sunrise On The Red Sand Dunes EDP</h6>
+                                            <small class="text-muted">Volume: 100ml</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="fw-semibold">$599.00</td>
+                                <td>
+                                    <input type="number" class="form-control form-control-sm text-center" value="1" min="1" max="10">
+                                </td>
+                                <td class="fw-bold text-dark">$599.00</td>
+                                <td class="text-end">
+                                    <button class="btn btn-outline-danger btn-sm border-0" title="Remove item">
+                                        <i class="bi bi-trash fs-5"></i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="mt-4 pt-3 border-top d-flex justify-content-between align-items-center">
+                    <a href="galeria.html" class="btn btn-outline-dark btn-sm">
+                        <i class="bi bi-arrow-left me-2"></i>Continue Shopping
+                    </a>
+                    <button class="btn btn-outline-secondary btn-sm">Clear Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+
+            <div class="card border-0 shadow-sm p-4 bg-light">
+                <h5 class="product-title fw-bold mb-4 fs-5 border-bottom pb-2">Order Summary</h5>
+                
+                <div class="d-flex justify-content-between mb-2 small text-muted">
+                    <span>Subtotal</span>
+                    <span class="fw-semibold text-dark">$1,598.00</span>
+                </div>
+                
+                <div class="d-flex justify-content-between mb-2 small text-muted">
+                    <span>Estimated Shipping</span>
+                    <span class="text-success fw-semibold">Free ($0.00)</span>
+                </div>
+
+                <div class="d-flex justify-content-between mb-3 small text-muted border-bottom pb-3">
+                    <span>Estimated Tax (IVA 16%)</span>
+                    <span class="fw-semibold text-dark">$255.68</span>
+                </div>
+
+                <div class="d-flex justify-content-between mb-4">
+                    <span class="fw-bold fs-5">Total</span>
+                    <span class="fw-bold fs-5 text-dark">$1,853.68</span>
+                </div>
+
+                <a href="#" class="btn btn-dark w-100 py-3 text-uppercase fw-bold shadow-sm">
+                    Proceed to Checkout <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<footer class="bg-dark text-secondary py-4 mt-auto border-top border-secondary border-opacity-25">
+    <div class="container text-center">
+        <p class="mb-0 small">&copy; 2026 SARA. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

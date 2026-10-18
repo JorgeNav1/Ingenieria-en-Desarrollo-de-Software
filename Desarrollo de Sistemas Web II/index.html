@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARA - Home</title>
+    
+    <!-- Bootstrap CSS and Google Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">    
+    
+<link href="css/styles.css" rel="stylesheet">
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<header class="sticky-top bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            
+            <a class="navbar-brand fw-bold fs-1 text-white" href="index.html" style="letter-spacing: 0px;">
+                <i class="bi bi-shop me-3"></i>SARA
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="menuNavegacion">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrito.html">Cart</a>
+                    </li>
+                </ul>
+                
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search products" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="flex-grow-1">
+    
+    <div id="carruselPromociones" class="carousel slide mb-5" data-bs-ride="carousel">
+      
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carruselPromociones" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Promotion 1"></button>
+        <button type="button" data-bs-target="#carruselPromociones" data-bs-slide-to="1" aria-label="Promotion 2"></button>
+        <button type="button" data-bs-target="#carruselPromociones" data-bs-slide-to="2" aria-label="Promotion 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="Img/oferta.jpg" class="d-block w-100 object-fit-cover" alt="End of Season Sale Banner" style="height: 500px;">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+            <h2 class="fw-bold">Big Season Clearance!</h2>
+            <p>Enjoy up to 50% off on selected items for a limited time.</p>
+            <a href="galeria.html" class="btn btn-light btn-lg text-dark">Deals</a>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="Img/novedades.jpg.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="New Releases Banner">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+            <h2 class="fw-bold">New Arrivals</h2>
+            <p>Discover the latest and most innovative products just added to our catalog.</p>
+            <a href="galeria.html" class="btn btn-light btn-lg text-dark">See What's New</a>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="Img/enviosgratis.jpg" class="d-block w-100 object-fit-cover" style="height: 500px;" alt="Free Shipping Banner">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+            <h2 class="fw-bold text-light">Free Nationwide Shipping</h2>
+            <p class="text-light">Place orders over $999 and receive your package at your doorstep at no extra cost.</p>
+            <a href="galeria.html" class="btn btn-light btn-lg text-dark">Shop Now</a>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carruselPromociones" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carruselPromociones" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+
+    <section class="container mb-5">
+        <h2 class="product-title text-center text-uppercase mb-4">Main Categories</h2>
+        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-3 text-center">
+            
+            <div class="col">
+                <a href="galeria.html" class="text-decoration-none text-dark">
+                    <div class="card border-0 shadow-sm p-3 h-100 hover-card">
+                        <div class="fs-1 text-dark mb-2"><i class="bi bi-gender-male"></i></div>
+                        <p class="mb-0 fw-semibold small">Men</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="galeria.html" class="text-decoration-none text-dark">
+                    <div class="card border-0 shadow-sm p-3 h-100 hover-card">
+                        <div class="fs-1 text-dark mb-2"><i class="bi bi-gender-female"></i></div>
+                        <p class="mb-0 fw-semibold small">Women</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="galeria.html" class="text-decoration-none text-dark">
+                    <div class="card border-0 shadow-sm p-3 h-100 hover-card">
+                        <div class="fs-1 text-dark mb-2"><i class="bi bi-balloon"></i></div>
+                        <p class="mb-0 fw-semibold small">Kids</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="galeria.html" class="text-decoration-none text-dark">
+                    <div class="card border-0 shadow-sm p-3 h-100 hover-card">
+                        <div class="fs-1 text-dark mb-2"><i class="bi bi-magic"></i></div>
+                        <p class="mb-0 fw-semibold small">Beauty</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="galeria.html" class="text-decoration-none text-dark">
+                    <div class="card border-0 shadow-sm p-3 h-100 hover-card">
+                        <div class="fs-1 text-dark mb-2"><i class="bi bi-luggage"></i></div>
+                        <p class="mb-0 fw-semibold small">Travel</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="galeria.html" class="text-decoration-none text-dark">
+                    <div class="card border-0 shadow-sm p-3 h-100 hover-card">
+                        <div class="fs-1 text-dark mb-2"><i class="bi bi-house"></i></div>
+                        <p class="mb-0 fw-semibold small">Home</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container mb-5">
+        <h2 class="product-title text-center text-uppercase mb-4">Featured Products</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-img-container">
+                        <img src="Img/productodestacado1.jpg" alt="Product">
+                    </div>
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title product-title fs-6 mb-1">Polo Bandas Graficos Ayrton Sennat</h5>
+                            <p class="card-text text-muted small">$999.00</p>
+                        </div>
+                        <a href="galeria.html" class="btn btn-dark w-100 mt-2">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-img-container">
+                        <img src="Img/productodestacado2.jpg" alt="Product">
+                    </div>
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title product-title fs-6 mb-1">Sunrise On The Red Sand Dunes EDP</h5>
+                            <p class="card-text text-muted small">$599.00</p>
+                        </div>
+                        <a href="galeria.html" class="btn btn-dark w-100 mt-2">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-img-container">
+                        <img src="Img/productodestacado3.jpg" alt="Product">
+                    </div>
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title product-title fs-6 mb-1">Chamarra Reversible Doble Faz</h5>
+                            <p class="card-text text-muted small">$1,599.00</p>
+                        </div>
+                        <a href="galeria.html" class="btn btn-dark w-100 mt-2">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-img-container">
+                        <img src="Img/productodestacado4.jpg" alt="Product">
+                    </div>
+                    <div class="card-body text-center d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title product-title fs-6 mb-1">Blazer Cinturon hebilla</h5>
+                            <p class="card-text text-muted small">$1,599.00</p>
+                        </div>
+                        <a href="galeria.html" class="btn btn-dark w-100 mt-2">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container mb-5">
+        <div class="p-5 text-center bg-light rounded-3 shadow-sm border">
+            <h2 class="product-title fw-bold mb-3">Ready to upgrade your style?</h2>
+            <p class="lead text-muted mb-4">Explore our complete catalog and discover exclusive trends for this season with free shipping options.</p>
+            <a href="galeria.html" class="btn btn-dark btn-lg px-5">Explore the Collection</a>
+        </div>
+    </section>
+
+    <section class="container mb-5">
+        <h2 class="product-title text-center text-uppercase mb-4">What Our Customers Say</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm p-3">
+                    <div class="card-body text-center">
+                        <div class="text-warning fs-5 mb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="card-text text-muted fst-italic">"Amazing quality and extremely fast shipping. The sizing guide was very accurate!"</p>
+                        <h6 class="card-title fw-bold mb-0">- Andrea Elizalde</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm p-3">
+                    <div class="card-body text-center">
+                        <div class="text-warning fs-5 mb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="card-text text-muted fst-italic">"The online shopping experience is smooth, and customer service resolved my inquiry right away."</p>
+                        <h6 class="card-title fw-bold mb-0">- Carlos Navidad</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm p-3">
+                    <div class="card-body text-center">
+                        <div class="text-warning fs-5 mb-2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="card-text text-muted fst-italic">"SARA has become my go-to store for trendy and minimalist apparel. Highly recommended!"</p>
+                        <h6 class="card-title fw-bold mb-0">- Adriana Lapizco</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-light py-5 mb-5 border-top border-bottom">
+        <div class="container">
+            <h2 class="product-title text-center text-uppercase mb-4">About SARA</h2>
+            <div class="row g-4 text-center text-md-start">
+                
+                <div class="col-md-4">
+                    <h5 class="fw-bold product-title mb-2"><i class="bi bi-shop me-2"></i>Who We Are</h5>
+                    <p class="text-muted small">SARA is a modern e-commerce platform dedicated to offering trendsetting fashion, beauty essentials, and lifestyle products with a seamless digital experience.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="fw-bold product-title mb-2"><i class="bi bi-bullseye me-2"></i>Mission & Vision</h5>
+                    <p class="text-muted small mb-1"><strong>Mission:</strong> To provide accessible, high-quality style options nationwide.</p>
+                    <p class="text-muted small"><strong>Vision:</strong> To become the leading digital retail brand recognized for innovation and customer trust.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="fw-bold product-title mb-2"><i class="bi bi-heart me-2"></i>Core Values</h5>
+                    <p class="text-muted small mb-0">Quality, transparency, customer-centricity, and continuous innovation in every service we deliver.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-dark text-secondary py-5 mt-auto border-top border-secondary border-opacity-25">
+    <div class="container">
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <h5 class="text-white product-title mb-3">SARA Store</h5>
+                <p class="small mb-1"><i class="bi bi-geo-alt me-2"></i>Culiacán, Sinaloa, México</p>
+                <p class="small mb-1"><i class="bi bi-telephone me-2"></i>800-220-7735</p>
+                <p class="small"><i class="bi bi-envelope me-2"></i>contacto@sara-store.com</p>
+            </div>
+
+            <div class="col-md-4">
+                <h5 class="text-white product-title mb-3">Useful Links</h5>
+                <ul class="list-unstyled small">
+                    <li class="mb-2"><a href="index.html" class="text-secondary text-decoration-none">Home</a></li>
+                    <li class="mb-2"><a href="galeria.html" class="text-secondary text-decoration-none">Products Gallery</a></li>
+                    <li class="mb-2"><a href="carrito.html" class="text-secondary text-decoration-none">Shopping Cart</a></li>
+                    <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h5 class="text-white product-title mb-3">Follow Us</h5>
+                <div class="fs-4 d-flex gap-3">
+                    <a href="#" class="text-secondary"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-secondary"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-secondary"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="text-secondary"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="border-secondary my-4">
+
+        <div class="text-center small">
+            <p class="mb-0">&copy; 2026 SARA. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
